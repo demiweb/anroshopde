@@ -389,7 +389,10 @@ function startCategorySlider1() {
             let sldPrev = sld.querySelector('.slider-btn--prev');
             let sldNext = sld.querySelector('.slider-btn--next');
             let pagin = sld.querySelector('.dots');
-
+            let amountDesk = 9;
+            if (sld.closest('.category-page').classList.contains('category-page--row')) {
+                amountDesk = 5;
+            }
             const swiper2 = new Swiper(sldCont, {
                 // Optional parameters
                 loop: false,
@@ -426,7 +429,7 @@ function startCategorySlider1() {
                 },
                 breakpoints: {
                     767: {
-                        slidesPerView: 9,
+                        slidesPerView: amountDesk,
                         spaceBetween: 10,
                     }
                 }
