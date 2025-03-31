@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>anroshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body class="">
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__cont">
+                <div class="burger mob-only">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <a href="">
+                        <img class="desk-only" src="./img/logo-h.png" alt="">
+                        <img class="mob-only" src="./img/logo-h1.png" alt="">
+                    </a>
+                </div>
+                <div class="header-rating">
+                    <div class="ic">
+                        <img src="./img/emblem-rate.svg" alt="">
+                    </div>
+                    <div class="header-rating__txt">
+                        <div class="rate">
+                            <span>4.80</span>
+                            <div class="rt" style="--rt: 4.80;"></div>
+                        </div>
+                        <p>Käuferschutz</p>
+                    </div>
+                </div>
+                <div class="header-flag">
+                    <div class="ic">
+                        <img src="./img/flag-ger.svg" alt="">
+                    </div>
+                    <div class="header-rating__txt">
+                        <div class="rate">
+                            <span>Manufaktur in Deutschland</span>
+                        </div>
+                        <p>Präzision, Qualität, Schnelligkeit</p>
+                    </div>
+                </div>
+                <div class="header-search">
+                    <div class="search-block">
+                        <form action="">
+                            <div class="search-input">
+                                <input type="text" placeholder="Wonach Suchen sie…">
+                            </div>
+                            <button class="srch-btn"></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="header-control">
+                    <a href="" class="item-control not-logged">
+                        <div class="ic" style="--ur: url('../img/user-ic.svg')"></div>
+                    </a>
+                    <div class="item-control btn-cart">
+                        <div class="ic" style="--ur: url('../img/cart-ic.svg')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bot">
+        <div class="container">
+            <div class="header-bot__cont">
+                <div class="header-menu">
+                    <ul>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic1.svg')"></div>
+                                Baumarkt Meterware
+                            </a>
+                            <ul class="wp-megamenu-sub-menu">
+                                <li>
+                                    <ul class="wp-megamenu-sub-menu">
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn1.jpg" alt="">
+                                                </div>
+                                                Antirutsch Klebeband
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn2.jpg" alt="">
+                                                </div>
+                                                Schubladenmatten
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn3.jpg" alt="">
+                                                </div>
+                                                Gummigranulat / Antivibration
+                                            </a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn4.jpg" alt="">
+                                                </div>
+                                                Gummimatten Rollenware
+                                            </a>
+                                            <ul class="wp-megamenu-sub-menu">
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn1.jpg" alt="">
+                                                        </div>
+                                                        Gummimatte SBR
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn2.jpg" alt="">
+                                                        </div>
+                                                        Stufenmatten
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn3.jpg" alt="">
+                                                        </div>
+                                                        TPE - Geruchsarm
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn3.jpg" alt="">
+                                                        </div>
+                                                        Arbeitsplatzmatte - Anti Ermüdungsmatte
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn5.jpg" alt="">
+                                                </div>
+                                                Kokosmatten Rollenware
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn6.jpg" alt="">
+                                                </div>
+                                                Kunstrasen
+                                            </a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn7.jpg" alt="">
+                                                </div>
+                                                PVC Bodenbelag
+                                            </a>
+                                            <ul class="wp-megamenu-sub-menu">
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn1.jpg" alt="">
+                                                        </div>
+                                                        Gummimatte SBR
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn2.jpg" alt="">
+                                                        </div>
+                                                        Stufenmatten
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn3.jpg" alt="">
+                                                        </div>
+                                                        TPE - Geruchsarm
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn3.jpg" alt="">
+                                                        </div>
+                                                        Arbeitsplatzmatte - Anti Ermüdungsmatte
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn8.jpg" alt="">
+                                                </div>
+                                                Ringgummi Rollenware
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn9.jpg" alt="">
+                                                </div>
+                                                Streifenvorhang - PVC Lamellen
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="menu-item">
+                                        <span>anro 2025</span>
+                                        <p>Neuankömmlinge</p>
+                                        <a href="" class="product-card">
+                                            <div class="tp">
+                                                <div class="tags">
+
+                                                </div>
+                                                <div class="img">
+                                                    <img src="./img/pr2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="bt">
+                                                <span>Kissen / Kissenbezüge</span>
+                                                <p class="nm">Dekokissen Kissenbezüge Kissenhülle Sofakissen Zierkissen
+                                                    mit /
+                                                    ohne Füllkissen Leinenoptik 4 Größen</p>
+                                                <div class="rate" style="--rt: 4.20;">
+                                                    <div class="rt"></div>
+                                                    <span>36 Kundenbewertungen</span>
+                                                </div>
+                                                <p class="prc">
+                                                    <span class="woocommerce-Price-amount amount"><bdi>ab *4,95€</bdi></span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-image">
+                                        <img src="./img/menu-right.jpg" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic2.svg')"></div>
+                                Gummimatten
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic3.svg')"></div>
+                                Bodenmatten
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic4.svg')"></div>
+                                Wohnen & Einrichten
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic5.svg')"></div>
+                                Tischdecken
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic6.svg')"></div>
+                                Kunstleder
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic7.svg')"></div>
+                                Tischschutz
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children menu-sale">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic8.svg')"></div>
+                                Sale %
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header-backplate"></div>
+<div class="cart-section">
+    <div class="cart-section__back"></div>
+    <div class="cart-section__block">
+        <div class="cart-section__head">
+            <span>Warenkorb</span>
+            <div class="cls">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="cart-section__cont">
+            <div class="cart-section__cart">
+                <div class="cart-top">
+                    <div class="cart-top__items">
+                        <div class="cart-item">
+                            <div class="cart-item__wrap">
+                                <a href="" class="img">
+                                    <img src="./img/pr1.jpg" alt="">
+                                </a>
+                                <div class="txt">
+                                    <div class="txt-l">
+                                        <a href="">Tischdecke Leinenoptik in Anthrazit abwischbar Wachstuch
+                                            Wachstuchtischdecke - 1000x140cm (10m), Schnittkante</a>
+                                        <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        <div class="quantity">
+                                            <div class="quantity-minus js-minus">-</div>
+                                            <div class="quantity-wrap">
+                                                <label class="screen-reader-text" for=""></label>
+                                                <input type="number" id="" class="input-text qty" name="quantity"
+                                                       value="1"
+                                                       aria-label="" size="4" min="1" max="8" step="1" placeholder=""
+                                                       inputmode="numeric" autocomplete="off">
+                                            </div>
+                                            <div class="quantity-plus js-plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="txt-r">
+                                        <div class="price">
+                                            <p>16,99€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="cart-item__delete"></button>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="cart-item__wrap">
+                                <a href="" class="img">
+                                    <img src="./img/pr1.jpg" alt="">
+                                </a>
+                                <div class="txt">
+                                    <div class="txt-l">
+                                        <a href="">Tischdecke Leinenoptik in Anthrazit abwischbar Wachstuch
+                                            Wachstuchtischdecke - 1000x140cm (10m), Schnittkante</a>
+                                        <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        <div class="quantity">
+                                            <div class="quantity-minus js-minus">-</div>
+                                            <div class="quantity-wrap">
+                                                <label class="screen-reader-text" for=""></label>
+                                                <input type="number" id="" class="input-text qty" name="quantity"
+                                                       value="1"
+                                                       aria-label="" size="4" min="1" max="8" step="1" placeholder=""
+                                                       inputmode="numeric" autocomplete="off">
+                                            </div>
+                                            <div class="quantity-plus js-plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="txt-r">
+                                        <div class="price">
+                                            <del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>8,40€</bdi></span>
+                                            </del>
+                                            <ins aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>9,20€</bdi></span>
+                                            </ins>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="cart-item__delete"></button>
+                            </div>
+                            <div class="cart-item__bonus">
+                                <div class="cart-item__bonus-info">
+                                    <div class="bonus-info__left">
+                                        <div class="img">
+                                            <img src="./img/pr1.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <a href="">im Langkarton auf einer Rolle</a>
+                                            <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        </div>
+                                    </div>
+                                    <div class="bonus-info__right">
+                                        <span>1 Stück</span>
+                                        <div class="price">
+                                            <p>2,99€</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="cart-item__wrap">
+                                <a href="" class="img">
+                                    <img src="./img/pr1.jpg" alt="">
+                                </a>
+                                <div class="txt">
+                                    <div class="txt-l">
+                                        <a href="">Tischdecke Leinenoptik in Anthrazit abwischbar Wachstuch
+                                            Wachstuchtischdecke - 1000x140cm (10m), Schnittkante</a>
+                                        <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        <div class="quantity">
+                                            <div class="quantity-minus js-minus">-</div>
+                                            <div class="quantity-wrap">
+                                                <label class="screen-reader-text" for=""></label>
+                                                <input type="number" id="" class="input-text qty" name="quantity"
+                                                       value="1"
+                                                       aria-label="" size="4" min="1" max="8" step="1" placeholder=""
+                                                       inputmode="numeric" autocomplete="off">
+                                            </div>
+                                            <div class="quantity-plus js-plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="txt-r">
+                                        <div class="price">
+                                            <p>16,99€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="cart-item__delete"></button>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="cart-item__wrap">
+                                <a href="" class="img">
+                                    <img src="./img/pr1.jpg" alt="">
+                                </a>
+                                <div class="txt">
+                                    <div class="txt-l">
+                                        <a href="">Tischdecke Leinenoptik in Anthrazit abwischbar Wachstuch
+                                            Wachstuchtischdecke - 1000x140cm (10m), Schnittkante</a>
+                                        <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        <div class="quantity">
+                                            <div class="quantity-minus js-minus">-</div>
+                                            <div class="quantity-wrap">
+                                                <label class="screen-reader-text" for=""></label>
+                                                <input type="number" id="" class="input-text qty" name="quantity"
+                                                       value="1"
+                                                       aria-label="" size="4" min="1" max="8" step="1" placeholder=""
+                                                       inputmode="numeric" autocomplete="off">
+                                            </div>
+                                            <div class="quantity-plus js-plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="txt-r">
+                                        <div class="price">
+                                            <del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>8,40€</bdi></span>
+                                            </del>
+                                            <ins aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>9,20€</bdi></span>
+                                            </ins>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="cart-item__delete"></button>
+                            </div>
+                            <div class="cart-item__bonus">
+                                <div class="cart-item__bonus-info">
+                                    <div class="bonus-info__left">
+                                        <div class="img">
+                                            <img src="./img/pr1.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <a href="">im Langkarton auf einer Rolle</a>
+                                            <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        </div>
+                                    </div>
+                                    <div class="bonus-info__right">
+                                        <span>1 Stück</span>
+                                        <div class="price">
+                                            <p>2,99€</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bot">
+                    <div class="cart-total">
+                        <div class="cart-total-line">
+                            <p>Zwischensumme:</p>
+                            <p>74,99€</p>
+                        </div>
+                        <div class="cart-total-line tax">
+                            <p>zzgl. Versandkosten</p>
+                            <p>inkl. MwSt.: 12,92€</p>
+                        </div>
+                    </div>
+                    <a href="" class="cart-btn">
+                        <div class="ic"></div>
+                        Checkout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<main>
+    <section class="blog">
+        <div class="breadcrumbs-block">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li><a href="">Start</a></li>
+                    <li><span>Baumarkt Meterware</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="blog-title">
+            <div class="container">
+                <h1 class="ttl">Blog</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="blog-cont">
+                <div class="blog-hero">
+                    <div class="img">
+                        <img src="./img/blog1.jpg" alt="">
+                    </div>
+                    <div class="txt">
+                        <div class="tag">Top news</div>
+                        <h2 class="subttl">Die besten Weihnachtstischdecken: Abwaschbare Stofftischdecken und Wachstuch
+                            Tischdecken für eine festliche Tischwäsche!</h2>
+                    </div>
+                </div>
+                <div class="blog-center">
+                    <div class="blog-center__control">
+                        <div class="search-block">
+                            <form action="">
+                                <div class="search-input">
+                                    <input type="text" placeholder="Wonach Suchen sie…">
+                                </div>
+                                <button class="srch-btn"></button>
+                            </form>
+                        </div>
+                        <div class="blog-selects">
+                            <div class="blog-select">
+                                <p>Archive</p>
+                                <select name="" id="">
+                                    <option value="">Jahr auswählen</option>
+                                    <option value="">Jahr auswählen</option>
+                                    <option value="">Jahr auswählen</option>
+                                </select>
+                            </div>
+                            <div class="blog-select">
+                                <p>Tags</p>
+                                <select name="" id="">
+                                    <option value="">Jahr auswählen</option>
+                                    <option value="">Jahr auswählen</option>
+                                    <option value="">Jahr auswählen</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-list">
+                        <a href="" class="single-blog">
+                            <div class="img">
+                                <img src="./img/blg1.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>PVC Bodenbelag vs. Linoleum: Der ultimative Vergleich für Käufer</span>
+                                <p>In diesem Artikel wird ein umfassender Vergleich zwischen PVC Bodenbelag und Linoleum
+                                    Bodenbelag angestellt, um euch bei der Entscheidungsfindung zu helfen. PVC bietet
+                                    Vorteile wie Wasserbeständigkeit, einfache Pflege und eine große Auswahl an Designs,
+                                    während Linoleum als nachhaltige und umweltfreundliche. […]</p>
+                                <span class="lnk">Mehr lesen</span>
+                            </div>
+                        </a>
+                        <a href="" class="single-blog">
+                            <div class="img">
+                                <img src="./img/blg2.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>Treppenteppich – Jetzt neu in unserem Shop erhältlich!</span>
+                                <p>Ein Treppenteppich ist mehr als nur ein schöner Blickfang in Ihrem Zuhause. Er
+                                    schützt Ihre Treppenstufen und sorgt für Sicherheit beim Treppensteigen. In diesem
+                                    Beitrag stellen wir Ihnen unseren neuen Treppenteppich vor, der ab sofort in unserem
+                                    Shop erhältlich ist. Perfekter Treppenschutz mit unserem Stufenteppich Treppen sind
+                                    häufig die Unfallquelle Nummer eins im Haus, insbesondere […]</p>
+                                <span class="lnk">Mehr lesen</span>
+                            </div>
+                        </a>
+                        <a href="" class="single-blog">
+                            <div class="img">
+                                <img src="./img/blg3.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>Die ultimative Lösung für rutschige Oberflächen: FixoFlex Anti-Rutsch Klebeband</span>
+                                <p>Rutschige Oberflächen bergen ein hohes Unfallrisiko, das sowohl in privaten als auch
+                                    in gewerblichen Bereichen gravierende Folgen nach sich ziehen kann. Ein unbedachter
+                                    Schritt auf einer glatten Fläche kann schnell zu schmerzhaften Stürzen und
+                                    Verletzungen führen, die im schlimmsten Fall langfristige Gesundheitsprobleme nach
+                                    sich ziehen. Gerade in Haushalten mit Kindern, älteren Menschen oder in
+                                    Arbeitsbereichen […]</p>
+                                <span class="lnk">Mehr lesen</span>
+                            </div>
+                        </a>
+                        <a href="" class="single-blog">
+                            <div class="img">
+                                <img src="./img/blg4.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>Entdecken Sie unsere neuen PVC Bodenbeläge in Meterware</span>
+                                <p>Unser Shop bietet ab sofort eine breite Auswahl an hochwertigen PVC Bodenbelägen in
+                                    Meterware an. Diese strapazierfähigen Bodenbeläge sind ideal für verschiedene
+                                    Anwendungsbereiche und überzeugen durch ihre herausragenden Eigenschaften. In diesem
+                                    Blogbeitrag erfahren Sie alles Wichtige über die Vorteile und Einsatzmöglichkeiten
+                                    unserer neuen PVC Bodenbeläge. Warum PVC Bodenbeläge in Meterware? PVC Bodenbeläge
+                                    sind eine hervorragende […]</p>
+                                <span class="lnk">Mehr lesen</span>
+                            </div>
+                        </a>
+                        <a href="" class="single-blog">
+                            <div class="img">
+                                <img src="./img/blg5.jpg" alt="">
+                            </div>
+                            <div class="txt">
+                                <span>Abwaschbare Tischdecken im Familienalltag nutzen – Für Klein und Groß</span>
+                                <p>Es geht mal wieder heiß her am Esstisch: Der Vater ist eben von der Arbeit gekommen
+                                    und isst sein Mittagessen, die älteren Kinder erledigen die Hausaufgaben, während
+                                    die jüngeren fröhlich basteln oder ein Bild mit Wasserfarben für die Mama malen. In
+                                    all dem Trubel ist ein Glas umgekippt, etwas Essen landet auf dem Tisch, der […]</p>
+                                <span class="lnk">Mehr lesen</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="right-category__update">
+                        <a href="" class="btn btn--white" style="--ic: url('../img/update.svg')">
+                            <div class="ic"></div>
+                            Weitere Produkte anzeigen
+                        </a>
+                        <ul class="pagination">
+                            <li><a href="" class="prev"></a></li>
+                            <li><span class="current">1</span></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="" class="next"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-top__item">
+                <div class="ic">
+                    <img src="./img/ftic1.svg" alt="">
+                </div>
+                <div class="txt">
+                    <span>Schnelle Lieferung</span>
+                    <p>Lieferung erfolgt in 2-3 Arbeitstagen</p>
+                </div>
+            </div>
+            <div class="footer-top__item">
+                <div class="ic">
+                    <img src="./img/ftic2.svg" alt="">
+                </div>
+                <div class="txt">
+                    <span>Einfache Rückgabe</span>
+                    <p>Schnelle Rücksendung / Erstattung</p>
+                </div>
+            </div>
+            <div class="footer-top__item">
+                <div class="ic">
+                    <img src="./img/ftic3.svg" alt="">
+                </div>
+                <div class="txt">
+                    <span>Sichere Bezahlung</span>
+                    <p>PayPal / Kreditkarte / Klarna / Rechnung</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-center">
+            <div class="footer-column">
+                <span>Über uns</span>
+                <ul>
+                    <li><a href="">Kontakt</a></li>
+                    <li><a href="">Über uns</a></li>
+                    <li><a href="">Unsere Manufaktur</a></li>
+                    <li><a href="">Kooperationen</a></li>
+                    <li><a href="">Umwelt-Entsorgung</a></li>
+                    <li><a href="">KARRIERE / JOBS</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <span>Shop</span>
+                <ul>
+                    <li><a href="">Zahlung und Versand</a></li>
+                    <li><a href="">Retour / Reklamation</a></li>
+                    <li><a href="">Newsletter</a></li>
+                    <li><a href="">B2B Geschäftskunden</a></li>
+                    <li><a href="">Häufig gestellte Fragen (FAQ)</a></li>
+                    <li><a href="">Kostenlose Produktproben</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <span>Wissenswertes</span>
+                <ul>
+                    <li><a href="">Küchenläufer</a></li>
+                    <li><a href="">Tischfolie</a></li>
+                    <li><a href="">Flurläufer – Schmutzfangläufer</a></li>
+                    <li><a href="">Gummimatten TPE / SBR | Stufenmatten</a></li>
+                    <li><a href="">Wachstuch Tischdecke – Anwendungsbereiche</a></li>
+                    <li><a href="">OEKO-TEX® Zertifikat</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <span>Rechtliches</span>
+                <ul>
+                    <li><a href="">AGB</a></li>
+                    <li><a href="">Datenschutz</a></li>
+                    <li><a href="">Fertigungsinformationen</a></li>
+                    <li><a href="">Widerruf</a></li>
+                    <li><a href="">Impressum</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bot">
+            <p>*Alle Preise inkl zzgl. Versandkosten. der gesetzlichen MwSt.</p>
+            <div class="img">
+                <img src="./img/cards1.svg" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="account-modal modal-window" data-modal="account">
+    <div class="backplate"></div>
+    <div class="account-modal__cont tabs-owner">
+        <div class="cls">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="account-modal__head">
+            <div class="account-modal__btn tab-btn active">Anmelden</div>
+            <div class="account-modal__btn tab-btn ">Registrieren</div>
+        </div>
+        <div class="account-modal__center">
+            <div class="account-modal__tab single-tab active">
+                <div class="txt">
+                    <p>Log in to Anroshop.de</p>
+                    <span>Bitte gib Deine E-Mail Adresse und Password ein: </span>
+                </div>
+                <div class="account-modal__form">
+                    <form action="">
+                        <div class="input-wrap">
+                            <input type="email" placeholder="Benutzername oder E-Mail-Adresse*">
+                        </div>
+                        <div class="input-wrap">
+                            <input type="password" placeholder="Passwort*">
+                        </div>
+                        <a href="" class="reset-pass btn-mod" data-mod="reset">Passwort vergessen?</a>
+                        <div class="input-checkbox">
+                            <label for=""></label>
+                            <input type="checkbox">
+                            <span class="checkbox-text">Angemeldet bleiben</span>
+                        </div>
+                        <button class="btn btn--green">Anmelden</button>
+                    </form>
+                </div>
+                <div class="form-separator">or</div>
+                <div class="account-modal__logs-other">
+                    login plugin
+                </div>
+            </div>
+            <div class="account-modal__tab single-tab ">
+                <div class="txt">
+                    <p>Melden Sie sich bei Anroshop.de</p>
+                    <span>Bitte fülle die Felder unten aus:</span>
+                </div>
+                <div class="account-modal__form">
+                    <form action="">
+                        <div class="input-wrap">
+                            <input type="email" placeholder="E-Mail-Adresse*">
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" placeholder="USt.-ID *">
+                        </div>
+                        <div class="input-text">
+                            <p></p>
+                        </div>
+                        <div class="input-checkbox">
+                            <label for=""></label>
+                            <input type="checkbox">
+                            <span class="checkbox-text">Ja, ich möchte ein Kundenkonto eröffnen und akzeptiere die <a
+                                    href="">Datenschutzerklärung</a>.</span>
+                        </div>
+                        <button class="btn btn--green">Registrierung</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="account-modal modal-window " data-modal="reset">
+    <div class="backplate"></div>
+    <div class="account-modal__cont">
+        <div class="cls">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="account-modal__center">
+            <div class="account-modal__tab single-tab active">
+                <div class="txt">
+                    <p>Hast du dein Passwort vergessen?</p>
+                    <span>Bitte gib deinen Benutzernamen oder E-Mail-Adresse ein. Du erhältst einen Link per E-Mail, womit du dir ein neues Passwort erstellen kannst.</span>
+                </div>
+                <div class="account-modal__form">
+                    <form action="">
+                        <div class="input-wrap">
+                            <input type="email" placeholder="Benutzername oder E-Mail-Adresse*">
+                        </div>
+                        <button class="btn btn--green">Anmelden</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script class="main-script" src="./js/scripts.min.js"></script>
+</body>
+</html>
