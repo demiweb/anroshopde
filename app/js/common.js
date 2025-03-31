@@ -757,12 +757,13 @@ function controlModal() {
 
 
                 modals.forEach((mod) => {
-                    if (document.querySelector('.modal-window.visible')) {
-                        document.querySelector('.modal-window.visible').classList.remove('visible');
-                    }
+
                     if (mod.dataset.modal === data) {
                         header.classList.remove('active');
                         document.body.classList.add('no-scroll');
+                        if (document.querySelector('.modal-window.visible')) {
+                            document.querySelector('.modal-window.visible').classList.remove('visible');
+                        }
                         mod.classList.add('visible');
                         burger.forEach((brg) => {
                             brg.classList.remove('active');
