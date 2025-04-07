@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>anroshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body class="">
+//= details/header.html
+<main>
+    <div class="checkout-section">
+        <a href="" class="checkout-deliv">
+            <p>Liefer und Zahlungsdetails</p>
+        </a>
+        <div class="checkout-section__cont">
+            <div class="container">
+                <div class="checkout-section__wrap">
+
+                    <div class="checkout-section__left">
+                        <form action="">
+                            <div class="checkout-form">
+                                <p class="checkout-title" style="--ic: url('../img/chk1.svg')">Rechnungsdetails</p>
+                                <div class="input-wrap">
+                                    <label for="">Anrede (optional)</label>
+                                    <select name="" id="">
+                                        <option value="">Keine</option>
+                                        <option value="">Keine</option>
+                                        <option value="">Keine</option>
+                                        <option value="">Keine</option>
+                                    </select>
+                                </div>
+                                <div class="input-line">
+                                    <div class="input-wrap">
+                                        <label for="">Vorname</label>
+                                        <input type="text" placeholder="Vorname" required>
+                                    </div>
+                                    <div class="input-wrap">
+                                        <label for="">Nachname</label>
+                                        <input type="text" placeholder="Nachname" required>
+                                    </div>
+                                </div>
+                                <div class="input-wrap">
+                                    <label for="">Firmenname (optional)</label>
+                                    <input type="text" placeholder="Firmenname (optional)">
+                                </div>
+                                <div class="input-wrap">
+                                    <label for="">Land / Region</label>
+                                    <select name="" id="" required>
+                                        <option value="">Land / Region</option>
+                                        <option value="">Keine</option>
+                                        <option value="">Keine</option>
+                                        <option value="">Keine</option>
+                                    </select>
+                                </div>
+                                <div class="input-wrap">
+                                    <label for="">Straße</label>
+                                    <input type="text" placeholder="Straßenname und Hausnummer" required>
+                                    <input type="text" placeholder="Wohnung, Suite, Zimmer usw. (optional)" required>
+                                </div>
+                                <div class="input-wrap">
+                                    <label for="">Postleitzahl</label>
+                                    <input type="text" placeholder="Postleitzahl" required>
+                                </div>
+                                <div class="input-wrap">
+                                    <label for="">Ort / Stadt</label>
+                                    <input type="text" placeholder="Ort / Stadt" required>
+                                </div>
+                                <div class="input-wrap">
+                                    <label for="">USt.-ID (optional)</label>
+                                    <input type="text" placeholder="USt.-ID (optional)">
+                                </div>
+                                <div class="input-wrap">
+                                    <label for="">Telefon (optional)</label>
+                                    <input type="text" placeholder="Telefon (optional)">
+                                </div>
+                                <div class="input-wrap">
+                                    <label for="">E-Mail-Adresse</label>
+                                    <input type="text" placeholder="E-Mail-Adresse" required>
+                                </div>
+                                <div class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox-text">Ein Kundenkonto eröffnen?</span>
+                                </div>
+                                <div class="input-form__other-address">
+                                    <div class="input-checkbox input-checkbox--delivery">
+                                        <input type="checkbox">
+                                        <span class="checkbox-text">Lieferung an eine andere Adresse senden?</span>
+                                    </div>
+                                </div>
+                                <p class="checkout-title" style="--ic: url('../img/chk3.svg')">Zahlungsart auswählen</p>
+
+                                <div class="checkout-radio">
+                                    <label for=""></label>
+                                    <input type="radio" name="payment-inp">
+                                    <span class="payment-input">
+                                        PayPal
+                                        <div class="ic">
+                                            <img src="./img/pi1.png" alt="">
+                                        </div>
+                                    </span>
+                                    <div class="checkout-radio__field">
+                                        <!--   Тут для Саші добавив, щоб не було "пусто" -->
+                                        <div class="input-wrap">
+                                            <label for="">Email</label>
+                                            <input type="text" placeholder="Email">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="checkout-radio">
+                                    <label for=""></label>
+                                    <input type="radio" name="payment-inp">
+                                    <span class="payment-input">
+                                        Kreditkarte
+                                        <div class="ic">
+                                            <img src="./img/pi2.png" alt="">
+                                        </div>
+                                    </span>
+                                    <div class="checkout-radio__field">
+                                        <!--   Тут для Саші добавив, щоб не було "пусто" -->
+                                        <div class="input-wrap">
+                                            <label for="">Name auf der Karte</label>
+                                            <input type="text" placeholder="Name auf der Karte">
+                                        </div>
+                                        <div class="input-wrap">
+                                            <label for="">Kartennummer</label>
+                                            <input type="text" placeholder="Kartennummer">
+                                        </div>
+
+                                        <div class="input-line">
+                                            <div class="input-wrap">
+                                                <label for="">Ablaufdatum</label>
+                                                <input type="text" placeholder="MM/JJ">
+                                            </div>
+                                            <div class="input-wrap">
+                                                <label for="">CVC/CVV</label>
+                                                <input type="password" placeholder="***">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkout-radio">
+                                    <label for=""></label>
+                                    <input type="radio" name="payment-inp">
+                                    <span class="payment-input">
+                                        Klarna - auf Rechnung
+                                        <div class="ic">
+                                            <img src="./img/pi3.png" alt="">
+                                        </div>
+                                    </span>
+                                    <div class="checkout-radio__field">
+                                        <!--   Тут для Саші добавив, щоб не було "пусто" -->
+                                        <div class="input-wrap">
+                                            <label for="">Name auf der Karte</label>
+                                            <input type="text" placeholder="Name auf der Karte">
+                                        </div>
+                                        <div class="input-wrap">
+                                            <label for="">Kartennummer</label>
+                                            <input type="text" placeholder="Kartennummer">
+                                        </div>
+
+                                        <div class="input-line">
+                                            <div class="input-wrap">
+                                                <label for="">Ablaufdatum</label>
+                                                <input type="text" placeholder="MM/JJ">
+                                            </div>
+                                            <div class="input-wrap">
+                                                <label for="">CVC/CVV</label>
+                                                <input type="password" placeholder="***">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkout-radio">
+                                    <label for=""></label>
+                                    <input type="radio" name="payment-inp">
+                                    <span class="payment-input">
+                                        Vorkasse
+                                        <div class="ic">
+                                            <img src="./img/pi4.png" alt="">
+                                        </div>
+                                    </span>
+                                    <div class="checkout-radio__field">
+                                        <!--   Тут для Саші добавив, щоб не було "пусто" -->
+                                        <div class="input-wrap">
+                                            <label for="">Name auf der Karte</label>
+                                            <input type="text" placeholder="Name auf der Karte">
+                                        </div>
+                                        <div class="input-wrap">
+                                            <label for="">Kartennummer</label>
+                                            <input type="text" placeholder="Kartennummer">
+                                        </div>
+
+                                        <div class="input-line">
+                                            <div class="input-wrap">
+                                                <label for="">Ablaufdatum</label>
+                                                <input type="text" placeholder="MM/JJ">
+                                            </div>
+                                            <div class="input-wrap">
+                                                <label for="">CVC/CVV</label>
+                                                <input type="password" placeholder="***">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkout-radio">
+                                    <label for=""></label>
+                                    <input type="radio" name="payment-inp">
+                                    <span class="payment-input">
+                                        auf Rechnung (nur b2b)
+
+                                    </span>
+                                    <div class="checkout-radio__field">
+                                        <!--   Тут для Саші добавив, щоб не було "пусто" -->
+                                        <div class="input-wrap">
+                                            <label for="">Name auf der Karte</label>
+                                            <input type="text" placeholder="Name auf der Karte">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox-text">Hier anwählen, um eine Einladung von CusRev (einer unabhängigen Drittanbieter-Organisation) zu erhalten, um deine Bestellung zu bewerten</span>
+                                </div>
+                                <div class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox-text">Mit deiner Bestellung erklärst du dich mit unseren <a
+                                            href="">Allgemeinen Geschäftsbedingungen</a>, <a href="">Widerrufsbestimmungen</a> und <a
+                                            href="">Datenschutzbestimmungen</a> einverstanden.  *</span>
+                                </div>
+                                <button class="btn btn--red">Jetzt kaufen</button>
+                                <div class="input-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox-text">Ich möchte den Newsletter erhalten und über Angebote, Neuigkeiten per E-Mail informiert werden. Diese Einwilligung kann jederzeit widerrufen werden.</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="checkout-section__right">
+                        <div class="checkout-section__top">
+                            <p class="checkout-title" style="--ic: url('../img/chk2.svg')">Deine Bestellung</p>
+                            <a href="" class="btn btn--blue btn-cart" style="--ic: url('../img/edic1.svg');">
+                                <div class="ic"></div>
+                                Bestellung bearbeiten</a>
+                        </div>
+                        <div class="cart-top__items">
+                            <div class="cart-item">
+                                <div class="cart-item__wrap">
+                                    <div class="img">
+                                        <img src="./img/pr1.jpg" alt="">
+                                        <span class="quan">1</span>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="txt-l">
+                                            <a href="">Tischdecke Leinenoptik in Anthrazit abwischbar Wachstuch
+                                                Wachstuchtischdecke - 1000x140cm (10m), Schnittkante</a>
+                                            <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        </div>
+                                        <div class="txt-r">
+                                            <div class="price">
+                                                <p>16,99€</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item">
+                                <div class="cart-item__wrap">
+                                    <div class="img">
+                                        <img src="./img/pr1.jpg" alt="">
+                                        <span class="quan">5</span>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="txt-l">
+                                            <a href="">Tischdecke Leinenoptik in Anthrazit abwischbar Wachstuch
+                                                Wachstuchtischdecke - 1000x140cm (10m), Schnittkante</a>
+                                            <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        </div>
+                                        <div class="txt-r">
+                                            <div class="price">
+                                                <del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>8,40€</bdi></span>
+                                                </del>
+                                                <ins aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>9,20€</bdi></span>
+                                                </ins>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-item__bonus">
+                                    <div class="cart-item__bonus-info">
+                                        <div class="bonus-info__left">
+                                            <div class="img">
+                                                <img src="./img/pr1.jpg" alt="">
+                                            </div>
+                                            <div class="txt">
+                                                <a href="">im Langkarton auf einer Rolle</a>
+                                                <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                            </div>
+                                        </div>
+                                        <div class="bonus-info__right">
+                                            <span>1 Stück</span>
+                                            <div class="price">
+                                                <p>2,99€</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkout-section__sum">
+                            <div class="checkout-section__line">
+                                <div>Zwischensumme</div>
+                                <span>74,99€</span>
+                            </div>
+                            <div class="checkout-section__line">
+                                <div>Versandkostenpauschale:</div>
+                                <span>5,95€</span>
+                            </div>
+                            <div class="checkout-section__line">
+                                <div>inkl. MwSt.</div>
+                                <span>4,29€</span>
+                            </div>
+                            <div class="checkout-section__line total">
+                                <div>Gesamtsumme</div>
+                                <span>126,89€</span>
+                            </div>
+                        </div>
+
+                        <div class="checkout-section__promocode prod-drop open">
+                            <div class="prod-drop__head">Hast du einen Gutschein? <strong>Klicke hier, um deinen
+                                Gutschein-Code einzugeben</strong></div>
+                            <div class="prod-drop__cont">
+                                <div class="promocode">
+                                    <p>Wenn Du einen Gutscheincode hast, wende ihn bitte unten an.</p>
+                                    <form action="">
+                                        <div class="input">
+                                            <input type="text" placeholder="Gutscheincode">
+                                        </div>
+                                        <button class="btn btn--green">
+                                            <div class="ic"></div>
+                                            Gutschein anwenden
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+//= details/footer.html
+//= details/scripts.html
+</body>
+</html>
