@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>anroshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body class="">
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__cont">
+                <div class="burger mob-only">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="logo">
+                    <a href="">
+                        <img class="desk-only" src="./img/logo-h.png" alt="">
+                        <img class="mob-only" src="./img/logo-h1.png" alt="">
+                    </a>
+                </div>
+                <div class="header-rating">
+                    <div class="ic">
+                        <img src="./img/emblem-rate.svg" alt="">
+                    </div>
+                    <div class="header-rating__txt">
+                        <div class="rate">
+                            <span>4.80</span>
+                            <div class="rt" style="--rt: 4.80;"></div>
+                        </div>
+                        <p>Käuferschutz</p>
+                    </div>
+                </div>
+                <div class="header-flag">
+                    <div class="ic">
+                        <img src="./img/flag-ger.svg" alt="">
+                    </div>
+                    <div class="header-rating__txt">
+                        <div class="rate">
+                            <span>Manufaktur in Deutschland</span>
+                        </div>
+                        <p>Präzision, Qualität, Schnelligkeit</p>
+                    </div>
+                </div>
+                <div class="header-search">
+                    <div class="search-block">
+                        <form action="">
+                            <div class="search-input">
+                                <input type="text" placeholder="Wonach Suchen sie…">
+                            </div>
+                            <button class="srch-btn"></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="header-control">
+                    <a href="" class="item-control not-logged btn-mod" data-mod="account">
+                        <div class="ic" style="--ur: url('../img/user-ic.svg')"></div>
+                    </a>
+                    <div class="item-control btn-cart">
+                        <div class="ic" style="--ur: url('../img/cart-ic.svg')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bot">
+        <div class="container">
+            <div class="header-bot__cont">
+                <div class="header-menu">
+                    <ul>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic1.svg')"></div>
+                                Baumarkt Meterware
+                            </a>
+                            <ul class="wp-megamenu-sub-menu">
+                                <li>
+                                    <ul class="wp-megamenu-sub-menu">
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn1.jpg" alt="">
+                                                </div>
+                                                Antirutsch Klebeband
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn2.jpg" alt="">
+                                                </div>
+                                                Schubladenmatten
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn3.jpg" alt="">
+                                                </div>
+                                                Gummigranulat / Antivibration
+                                            </a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn4.jpg" alt="">
+                                                </div>
+                                                Gummimatten Rollenware
+                                            </a>
+                                            <ul class="wp-megamenu-sub-menu">
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn1.jpg" alt="">
+                                                        </div>
+                                                        Gummimatte SBR
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn2.jpg" alt="">
+                                                        </div>
+                                                        Stufenmatten
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn3.jpg" alt="">
+                                                        </div>
+                                                        TPE - Geruchsarm
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn3.jpg" alt="">
+                                                        </div>
+                                                        Arbeitsplatzmatte - Anti Ermüdungsmatte
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn5.jpg" alt="">
+                                                </div>
+                                                Kokosmatten Rollenware
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn6.jpg" alt="">
+                                                </div>
+                                                Kunstrasen
+                                            </a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn7.jpg" alt="">
+                                                </div>
+                                                PVC Bodenbelag
+                                            </a>
+                                            <ul class="wp-megamenu-sub-menu">
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn1.jpg" alt="">
+                                                        </div>
+                                                        Gummimatte SBR
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn2.jpg" alt="">
+                                                        </div>
+                                                        Stufenmatten
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn3.jpg" alt="">
+                                                        </div>
+                                                        TPE - Geruchsarm
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <div class="ic">
+                                                            <img src="./img/mn3.jpg" alt="">
+                                                        </div>
+                                                        Arbeitsplatzmatte - Anti Ermüdungsmatte
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn8.jpg" alt="">
+                                                </div>
+                                                Ringgummi Rollenware
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="ic">
+                                                    <img src="./img/mn9.jpg" alt="">
+                                                </div>
+                                                Streifenvorhang - PVC Lamellen
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="menu-item">
+                                        <span>anro 2025</span>
+                                        <p>Neuankömmlinge</p>
+                                        <a href="" class="product-card">
+                                            <div class="tp">
+                                                <div class="tags">
+
+                                                </div>
+                                                <div class="img">
+                                                    <img src="./img/pr2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="bt">
+                                                <span>Kissen / Kissenbezüge</span>
+                                                <p class="nm">Dekokissen Kissenbezüge Kissenhülle Sofakissen Zierkissen
+                                                    mit /
+                                                    ohne Füllkissen Leinenoptik 4 Größen</p>
+                                                <div class="rate" style="--rt: 4.20;">
+                                                    <div class="rt"></div>
+                                                    <span>36 Kundenbewertungen</span>
+                                                </div>
+                                                <p class="prc">
+                                                    <span class="woocommerce-Price-amount amount"><bdi>ab *4,95€</bdi></span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="menu-image">
+                                        <img src="./img/menu-right.jpg" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic2.svg')"></div>
+                                Gummimatten
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic3.svg')"></div>
+                                Bodenmatten
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic4.svg')"></div>
+                                Wohnen & Einrichten
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic5.svg')"></div>
+                                Tischdecken
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic6.svg')"></div>
+                                Kunstleder
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic7.svg')"></div>
+                                Tischschutz
+                            </a>
+                        </li>
+                        <li class="menu-item-has-children menu-sale">
+                            <a href="">
+                                <div class="ic" style="--ur: url('../img/mnic8.svg')"></div>
+                                Sale %
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header-backplate"></div>
+<div class="cart-section">
+    <div class="cart-section__back"></div>
+    <div class="cart-section__block">
+        <div class="cart-section__head">
+            <span>Warenkorb</span>
+            <div class="cls">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="cart-section__cont">
+            <div class="cart-section__cart">
+                <div class="cart-top">
+                    <div class="cart-top__items">
+                        <div class="cart-item">
+                            <div class="cart-item__wrap">
+                                <a href="" class="img">
+                                    <img src="./img/pr1.jpg" alt="">
+                                </a>
+                                <div class="txt">
+                                    <div class="txt-l">
+                                        <a href="">Tischdecke Leinenoptik in Anthrazit abwischbar Wachstuch
+                                            Wachstuchtischdecke - 1000x140cm (10m), Schnittkante</a>
+                                        <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        <div class="quantity">
+                                            <div class="quantity-minus js-minus">-</div>
+                                            <div class="quantity-wrap">
+                                                <label class="screen-reader-text" for=""></label>
+                                                <input type="number" id="" class="input-text qty" name="quantity"
+                                                       value="1"
+                                                       aria-label="" size="4" min="1" max="8" step="1" placeholder=""
+                                                       inputmode="numeric" autocomplete="off">
+                                            </div>
+                                            <div class="quantity-plus js-plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="txt-r">
+                                        <div class="price">
+                                            <p>16,99€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="cart-item__delete"></button>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="cart-item__wrap">
+                                <a href="" class="img">
+                                    <img src="./img/pr1.jpg" alt="">
+                                </a>
+                                <div class="txt">
+                                    <div class="txt-l">
+                                        <a href="">Tischdecke Leinenoptik in Anthrazit abwischbar Wachstuch
+                                            Wachstuchtischdecke - 1000x140cm (10m), Schnittkante</a>
+                                        <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        <div class="quantity">
+                                            <div class="quantity-minus js-minus">-</div>
+                                            <div class="quantity-wrap">
+                                                <label class="screen-reader-text" for=""></label>
+                                                <input type="number" id="" class="input-text qty" name="quantity"
+                                                       value="1"
+                                                       aria-label="" size="4" min="1" max="8" step="1" placeholder=""
+                                                       inputmode="numeric" autocomplete="off">
+                                            </div>
+                                            <div class="quantity-plus js-plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="txt-r">
+                                        <div class="price">
+                                            <del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>8,40€</bdi></span>
+                                            </del>
+                                            <ins aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>9,20€</bdi></span>
+                                            </ins>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="cart-item__delete"></button>
+                            </div>
+                            <div class="cart-item__bonus">
+                                <div class="cart-item__bonus-info">
+                                    <div class="bonus-info__left">
+                                        <div class="img">
+                                            <img src="./img/pr1.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <a href="">im Langkarton auf einer Rolle</a>
+                                            <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        </div>
+                                    </div>
+                                    <div class="bonus-info__right">
+                                        <span>1 Stück</span>
+                                        <div class="price">
+                                            <p>2,99€</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="cart-item__wrap">
+                                <a href="" class="img">
+                                    <img src="./img/pr1.jpg" alt="">
+                                </a>
+                                <div class="txt">
+                                    <div class="txt-l">
+                                        <a href="">Tischdecke Leinenoptik in Anthrazit abwischbar Wachstuch
+                                            Wachstuchtischdecke - 1000x140cm (10m), Schnittkante</a>
+                                        <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        <div class="quantity">
+                                            <div class="quantity-minus js-minus">-</div>
+                                            <div class="quantity-wrap">
+                                                <label class="screen-reader-text" for=""></label>
+                                                <input type="number" id="" class="input-text qty" name="quantity"
+                                                       value="1"
+                                                       aria-label="" size="4" min="1" max="8" step="1" placeholder=""
+                                                       inputmode="numeric" autocomplete="off">
+                                            </div>
+                                            <div class="quantity-plus js-plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="txt-r">
+                                        <div class="price">
+                                            <p>16,99€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="cart-item__delete"></button>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="cart-item__wrap">
+                                <a href="" class="img">
+                                    <img src="./img/pr1.jpg" alt="">
+                                </a>
+                                <div class="txt">
+                                    <div class="txt-l">
+                                        <a href="">Tischdecke Leinenoptik in Anthrazit abwischbar Wachstuch
+                                            Wachstuchtischdecke - 1000x140cm (10m), Schnittkante</a>
+                                        <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        <div class="quantity">
+                                            <div class="quantity-minus js-minus">-</div>
+                                            <div class="quantity-wrap">
+                                                <label class="screen-reader-text" for=""></label>
+                                                <input type="number" id="" class="input-text qty" name="quantity"
+                                                       value="1"
+                                                       aria-label="" size="4" min="1" max="8" step="1" placeholder=""
+                                                       inputmode="numeric" autocomplete="off">
+                                            </div>
+                                            <div class="quantity-plus js-plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="txt-r">
+                                        <div class="price">
+                                            <del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>8,40€</bdi></span>
+                                            </del>
+                                            <ins aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>9,20€</bdi></span>
+                                            </ins>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="cart-item__delete"></button>
+                            </div>
+                            <div class="cart-item__bonus">
+                                <div class="cart-item__bonus-info">
+                                    <div class="bonus-info__left">
+                                        <div class="img">
+                                            <img src="./img/pr1.jpg" alt="">
+                                        </div>
+                                        <div class="txt">
+                                            <a href="">im Langkarton auf einer Rolle</a>
+                                            <p>Lieferzeit: 2-3 Arbeitstage</p>
+                                        </div>
+                                    </div>
+                                    <div class="bonus-info__right">
+                                        <span>1 Stück</span>
+                                        <div class="price">
+                                            <p>2,99€</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bot">
+                    <div class="cart-total">
+                        <div class="cart-total-line">
+                            <p>Zwischensumme:</p>
+                            <p>74,99€</p>
+                        </div>
+                        <div class="cart-total-line tax">
+                            <p>zzgl. Versandkosten</p>
+                            <p>inkl. MwSt.: 12,92€</p>
+                        </div>
+                    </div>
+                    <a href="" class="cart-btn">
+                        <div class="ic"></div>
+                        Checkout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<main>
+    <div class="breadcrumbs-block">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li><a href="">Start</a></li>
+                <li><span>AGB</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="policy">
+        <div class="container">
+            <div class="policy__cont">
+                <div class="policy__left prod-drop">
+                    <span class="prod-drop__head">Rechtliches</span>
+                    <ul>
+                        <!--   Наскільки зрозумів з їх актуального сайту, це все посилання, на аналогічні текстові сторінки -->
+                        <li><a class="active" href="">AGB</a></li>
+                        <li><a href="">Datenschutz</a></li>
+                        <li><a href="">Fertigungsinformationen</a></li>
+                        <li><a href="">Widerruf</a></li>
+                        <li><a href="">Impressum</a></li>
+                    </ul>
+                </div>
+                <div class="policy__right">
+                    <div class="policy__wrap">
+                        <h1 class="subttl">AGB</h1>
+                        <div class="policy__text">
+                            <div class="policy__part">
+                                <h2>Allgemeine Geschäftsbedingungen</h2>
+                                <div class="policy__sub-part">
+                                    <h3>Grundlegende Bestimmungen</h3>
+                                    <p>1 Die nachstehenden Geschäftsbedingungen gelten für Verträge, die Sie mit uns als
+                                        Anbieter (Anro Trade GmbH) über die Internetseite https://www.anroshop.de
+                                        schließen. Soweit nicht anders vereinbart, wird der Einbeziehung gegebenenfalls
+                                        von Ihnen verwendeter eigener Bedingungen widersprochen.</p>
+
+                                    <p>2 Verbraucher im Sinne der nachstehenden Regelungen ist jede natürliche Person,
+                                        die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder ihrer
+                                        gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden
+                                        kann. Unternehmer ist jede natürliche oder juristische Person oder eine
+                                        rechtsfähige Personengesellschaft, die bei Abschluss eines Rechtsgeschäfts in
+                                        Ausübung ihrer selbständigen beruflichen oder gewerblichen Tätigkeit
+                                        handelt.</p>
+                                </div>
+                                <div class="policy__sub-part">
+                                    <h3>Zustandekommen des Vertrages</h3>
+                                    <p>1 Gegenstand des Vertrages ist der Verkauf von Waren .</p>
+
+                                    <p>2 Bereits mit dem Einstellen des jeweiligen Produkts auf unserer Internetseite
+                                        unterbreiten wir Ihnen ein verbindliches Angebot zum Abschluss eines Vertrages
+                                        über das Online-Warenkorbsystem zu den in der Artikelbeschreibung angegebenen
+                                        Bedingungen. </p>
+
+                                    <p>3 Der Vertrag kommt über das Online-Warenkorbsystem wie folgt zustande: Die zum
+                                        Kauf beabsichtigten Waren  werden im "Warenkorb" abgelegt. Über die
+                                        entsprechende Schaltfläche in der Navigationsleiste können Sie den "Warenkorb"
+                                        aufrufen und dort jederzeit Änderungen vornehmen. Nach Anklicken der
+                                        Schaltfläche "Kasse" oder "Weiter zur Bestellung"  (oder ähnliche
+                                        Bezeichnung) und der Eingabe der persönlichen Daten sowie der Zahlungs- und
+                                        Versandbedingungen werden Ihnen abschließend die Bestelldaten als
+                                        Bestellübersicht angezeigt.</p>
+
+                                    <p>Soweit Sie als Zahlungsart ein Sofortzahl-System (z.B. PayPal
+                                        (Express/Plus/Checkout), Amazon Pay, Sofort, giropay) nutzen, werden Sie
+                                        entweder auf die Bestellübersichtsseite in unserem Online-Shop geführt oder auf
+                                        die Internetseite des Anbieters des Sofortzahl-Systems weitergeleitet. Erfolgt
+                                        eine Weiterleitung zu dem jeweiligen Sofortzahl-System, nehmen Sie dort die
+                                        entsprechende Auswahl bzw. Eingabe Ihrer Daten vor. Abschließend werden Ihnen
+                                        auf der Internetseite des Anbieters des Sofortzahl-Systems oder nachdem Sie
+                                        zurück in unseren Online-Shop geleitet wurden, die Bestelldaten als
+                                        Bestellübersicht angezeigt.</p>
+
+                                    <p>Vor Absenden der Bestellung haben Sie die Möglichkeit, die Angaben in der
+                                        Bestellübersicht nochmals zu überprüfen, zu ändern (auch über die Funktion
+                                        "zurück" des Internetbrowsers) bzw. die Bestellung abzubrechen.</p>
+
+                                    <p>Mit dem Absenden der Bestellung über die entsprechende Schaltfläche
+                                        ("zahlungspflichtig bestellen", "kaufen" / "jetzt kaufen", "kostenpflichtig
+                                        bestellen", "bezahlen" / "jetzt bezahlen" oder ähnliche Bezeichnung) erklären
+                                        Sie rechtsverbindlich die Annahme des Angebotes, wodurch der Vertrag zustande
+                                        kommt.</p>
+
+                                    <p>4 Ihre Anfragen zur Erstellung eines Angebotes sind für Sie unverbindlich. Wir
+                                        unterbreiten Ihnen hierzu ein verbindliches Angebot in Textform (z.B. per
+                                        E-Mail), welches Sie innerhalb von 5 Tagen (soweit im jeweiligen Angebot keine
+                                        andere Frist ausgewiesen ist) annehmen können.</p>
+
+                                    <p>5 Die Abwicklung der Bestellung und Übermittlung aller im Zusammenhang mit dem
+                                        Vertragsschluss erforderlichen Informationen erfolgt per E-Mail zum Teil
+                                        automatisiert. Sie haben deshalb sicherzustellen, dass die von Ihnen bei uns
+                                        hinterlegte E-Mail-Adresse zutreffend ist, der Empfang der E-Mails technisch
+                                        sichergestellt und insbesondere nicht durch SPAM-Filter verhindert wird.</p>
+                                </div>
+                                <div class="policy__sub-part">
+                                    <h3>Besondere Vereinbarungen zu angebotenen Zahlungsarten</h3>
+                                    <p>(1) Zahlung über Klarna <br>In Zusammenarbeit mit dem Zahlungsdienstleister
+                                        Klarna Bank AB (publ) (Sveavägen 46, 111 34 Stockholm, Schweden; „Klarna“)
+                                        bieten wir die folgenden Zahlungsoptionen an. Die Zahlung erfolgt jeweils an
+                                        Klarna:</p>
+                                    <ul>
+                                        <li>Rechnung („Pay Later“): Die Klarna Rechnungsbedingungen für Deutschland
+                                            finden Sie
+                                            unter <a href="">https://cdn.klarna.com/1.0/shared/content/legal/terms/0/de_de/invoice</a>;
+                                            die Bedingungen für die Option zur Verlängerung des Zahlungsziels finden Sie
+                                            unter <a href="">https://cdn.klarna.com/1.0/shared/content/legal/terms/0/de_de/due_date_extension</a>.
+                                            Die Klarna Rechnungsbedingungen für Österreich finden Sie
+                                            unter <a href="">https://cdn.klarna.com/1.0/shared/content/legal/terms/0/de_at/invoice</a>;
+                                            die Bedingungen für die Option zur Verlängerung des Zahlungsziels finden Sie
+                                            unter
+                                            <a href="">https://cdn.klarna.com/1.0/shared/content/legal/terms/0/de_at/due_date_extension</a>.
+                                        </li>
+
+                                    </ul>
+                                    <p>Nähere Informationen zu Klarna sowie die Klarna Nutzungsbedingungen für
+                                        Österreich finden Sie unter <a href="">https://cdn.klarna.com/1.0/shared/content/legal/terms/0/de_at/user</a>
+                                        und <a href="">https://www.klarna.com/at/</a>.</p>
+                                </div>
+                                <div class="policy__sub-part">
+                                    <h3>Zurückbehaltungsrecht, Eigentumsvorbehalt</h3>
+                                    <p>1) Ein Zurückbehaltungsrecht können Sie nur ausüben, soweit es sich um
+                                        Forderungen aus demselben Vertragsverhältnis handelt.</p>
+
+                                    <p>2) Die Ware bleibt bis zur vollständigen Zahlung des Kaufpreises unser
+                                        Eigentum.</p>
+
+                                    <p>3) Sind Sie Unternehmer, gilt ergänzend Folgendes:</p>
+
+                                    <p>a) Wir behalten uns das Eigentum an der Ware bis zum vollständigen Ausgleich
+                                        aller Forderungen aus der laufenden Geschäftsbeziehung vor. Vor Übergang des
+                                        Eigentums an der Vorbehaltsware ist eine Verpfändung oder Sicherheitsübereignung
+                                        nicht zulässig.</p>
+
+                                    <p>b) Sie können die Ware im ordentlichen Geschäftsgang weiterverkaufen. Für diesen
+                                        Fall treten Sie bereits jetzt alle Forderungen in Höhe des Rechnungsbetrages,
+                                        die Ihnen aus dem Weiterverkauf erwachsen, an uns ab, wir nehmen die Abtretung
+                                        an. Sie sind weiter zur Einziehung der Forderung ermächtigt. Soweit Sie Ihren
+                                        Zahlungsverpflichtungen nicht ordnungsgemäß nachkommen, behalten wir uns
+                                        allerdings vor, die Forderung selbst einzuziehen.</p>
+
+                                    <p>c) Bei Verbindung und Vermischung der Vorbehaltsware erwerben wir Miteigentum an
+                                        der neuen Sache im Verhältnis des Rechnungswertes der Vorbehaltsware zu den
+                                        anderen verarbeiteten Gegenständen zum Zeitpunkt der Verarbeitung.</p>
+
+                                    <p>d) Wir verpflichten uns, die uns zustehenden Sicherheiten auf Ihr Verlangen
+                                        insoweit freizugeben, als der realisierbare Wert unserer Sicherheiten die zu
+                                        sichernde Forderung um mehr als 10% übersteigt. Die Auswahl der freizugebenden
+                                        Sicherheiten obliegt uns.</p>
+                                </div>
+                                <div class="policy__sub-part">
+                                    <h3>Gewährleistung</h3>
+                                    <p>1) Es bestehen die gesetzlichen Mängelhaftungsrechte.</p>
+
+                                    <p>2) Als Verbraucher werden Sie gebeten, die Ware bei Lieferung umgehend auf
+                                        Vollständigkeit, offensichtliche Mängel und Transportschäden zu überprüfen und
+                                        uns sowie dem Spediteur Beanstandungen schnellstmöglich mitzuteilen. Kommen Sie
+                                        dem nicht nach, hat dies keine Auswirkung auf Ihre gesetzlichen
+                                        Gewährleistungsansprüche.</p>
+
+                                    <p>3) Soweit ein Merkmal der Ware von den objektiven Anforderungen abweicht, gilt
+                                        die Abweichung nur dann als vereinbart, wenn Sie vor Abgabe der
+                                        Vertragserklärung durch uns über selbige in Kenntnis gesetzt wurden und die
+                                        Abweichung ausdrücklich und gesondert zwischen den Vertragsparteien vereinbart
+                                        wurde.</p>
+
+                                    <p>4) Soweit Sie Unternehmer sind, gilt abweichend von den vorstehenden
+                                        Gewährleistungsregelungen:</p>
+
+                                    <p>a)  Als Beschaffenheit der Ware gelten nur unsere eigenen Angaben und die
+                                        Produktbeschreibung des Herstellers als vereinbart, nicht jedoch sonstige
+                                        Werbung, öffentliche Anpreisungen und Äußerungen des Herstellers.</p>
+
+                                    <p>b)  Bei Mängeln leisten wir nach unserer Wahl Gewähr durch Nachbesserung oder
+                                        Nachlieferung. Schlägt die Mangelbeseitigung fehl, können Sie nach Ihrer Wahl
+                                        Minderung verlangen oder vom Vertrag zurücktreten. Die Mängelbeseitigung gilt
+                                        nach erfolglosem zweiten Versuch als fehlgeschlagen, wenn sich nicht
+                                        insbesondere aus der Art der Ware oder des Mangels oder den sonstigen Umständen
+                                        etwas anderes ergibt. Im Falle der Nachbesserung müssen wir nicht die erhöhten
+                                        Kosten tragen, die durch die Verbringung der Ware an einen anderen Ort als den
+                                        Erfüllungsort entstehen, sofern die Verbringung nicht dem bestimmungsgemäßen
+                                        Gebrauch der Ware entspricht.</p>
+
+                                    <p>c)  Die Gewährleistungsfrist beträgt ein Jahr ab Ablieferung der Ware. Die
+                                        Fristverkürzung gilt nicht:
+                                        – für uns zurechenbare schuldhaft verursachte Schäden aus der Verletzung des
+                                        Lebens, des Körpers oder der Gesundheit und bei vorsätzlich oder grob fahrlässig
+                                        verursachten sonstigen Schäden;  – soweit wir den Mangel arglistig verschwiegen
+                                        oder eine Garantie für die Beschaffenheit der Sache übernommen haben;  – bei
+                                        Sachen, die entsprechend ihrer üblichen Verwendungsweise für ein Bauwerk
+                                        verwendet worden sind und dessen Mangelhaftigkeit verursacht haben;  – bei
+                                        gesetzlichen Rückgriffsansprüchen, die Sie im Zusammenhang mit Mängelrechten
+                                        gegen uns haben.</p>
+                                </div>
+                                <div class="policy__sub-part">
+                                    <h3>Rechtswahl, Erfüllungsort, Gerichtsstand</h3>
+                                    <p>1) Es gilt deutsches Recht. Bei Verbrauchern gilt diese Rechtswahl nur, soweit
+                                        hierdurch der durch zwingende Bestimmungen des Rechts des Staates des
+                                        gewöhnlichen Aufenthaltes des Verbrauchers gewährte Schutz nicht entzogen wird
+                                        (Günstigkeitsprinzip).</p>
+
+                                    <p>2) Erfüllungsort für alle Leistungen aus den mit uns bestehenden
+                                        Geschäftsbeziehungen sowie Gerichtsstand ist unser Sitz, soweit Sie nicht
+                                        Verbraucher, sondern Kaufmann, juristische Person des öffentlichen Rechts oder
+                                        öffentlich-rechtliches Sondervermögen sind. Dasselbe gilt, wenn Sie keinen
+                                        allgemeinen Gerichtsstand in Deutschland oder der EU haben oder der Wohnsitz
+                                        oder gewöhnliche Aufenthalt im Zeitpunkt der Klageerhebung nicht bekannt ist.
+                                        Die Befugnis, auch das Gericht an einem anderen gesetzlichen Gerichtsstand
+                                        anzurufen, bleibt hiervon unberührt.</p>
+
+                                    <p>3) Die Bestimmungen des UN-Kaufrechts finden ausdrücklich keine Anwendung.</p>
+                                </div>
+
+                            </div>
+                            <div class="policy__part">
+                                <h2>Kundeninformationen</h2>
+                                <div class="policy__sub-part">
+                                    <h3> Identität des Verkäufers</h3>
+                                    <p>Anro Trade GmbH <br>Industriestr. 10 <br>75443 Ötisheim <br>Deutschland <br>Telefon:
+                                        072327369888 <br>E-Mail: info@anrotrade.com</p>
+
+                                    <p>Alternative Streitbeilegung: Die Europäische Kommission stellt eine Plattform
+                                        für die außergerichtliche Online-Streitbeilegung (OS-Plattform) bereit,
+                                        aufrufbar unter <a href="">https://ec.europa.eu/odr</a>.</p>
+
+                                    <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor
+                                        Verbraucherschlichtungsstellen teilzunehmen.</p>
+                                </div>
+                                <div class="policy__sub-part">
+                                    <h3>Informationen zum Zustandekommen des Vertrages</h3>
+                                    <p>Die technischen Schritte zum Vertragsschluss, der Vertragsschluss selbst und die
+                                        Korrekturmöglichkeiten erfolgen nach Maßgabe der Regelungen "Zustandekommen des
+                                        Vertrages" unserer Allgemeinen Geschäftsbedingungen (Teil I.).</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-top__item">
+                <div class="ic">
+                    <img src="./img/ftic1.svg" alt="">
+                </div>
+                <div class="txt">
+                    <span>Schnelle Lieferung</span>
+                    <p>Lieferung erfolgt in 2-3 Arbeitstagen</p>
+                </div>
+            </div>
+            <div class="footer-top__item">
+                <div class="ic">
+                    <img src="./img/ftic2.svg" alt="">
+                </div>
+                <div class="txt">
+                    <span>Einfache Rückgabe</span>
+                    <p>Schnelle Rücksendung / Erstattung</p>
+                </div>
+            </div>
+            <div class="footer-top__item">
+                <div class="ic">
+                    <img src="./img/ftic3.svg" alt="">
+                </div>
+                <div class="txt">
+                    <span>Sichere Bezahlung</span>
+                    <p>PayPal / Kreditkarte / Klarna / Rechnung</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-center">
+            <div class="footer-column">
+                <span>Über uns</span>
+                <ul>
+                    <li><a href="">Kontakt</a></li>
+                    <li><a href="">Über uns</a></li>
+                    <li><a href="">Unsere Manufaktur</a></li>
+                    <li><a href="">Kooperationen</a></li>
+                    <li><a href="">Umwelt-Entsorgung</a></li>
+                    <li><a href="">KARRIERE / JOBS</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <span>Shop</span>
+                <ul>
+                    <li><a href="">Zahlung und Versand</a></li>
+                    <li><a href="">Retour / Reklamation</a></li>
+                    <li><a href="">Newsletter</a></li>
+                    <li><a href="">B2B Geschäftskunden</a></li>
+                    <li><a href="">Häufig gestellte Fragen (FAQ)</a></li>
+                    <li><a href="">Kostenlose Produktproben</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <span>Wissenswertes</span>
+                <ul>
+                    <li><a href="">Küchenläufer</a></li>
+                    <li><a href="">Tischfolie</a></li>
+                    <li><a href="">Flurläufer – Schmutzfangläufer</a></li>
+                    <li><a href="">Gummimatten TPE / SBR | Stufenmatten</a></li>
+                    <li><a href="">Wachstuch Tischdecke – Anwendungsbereiche</a></li>
+                    <li><a href="">OEKO-TEX® Zertifikat</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <span>Rechtliches</span>
+                <ul>
+                    <li><a href="">AGB</a></li>
+                    <li><a href="">Datenschutz</a></li>
+                    <li><a href="">Fertigungsinformationen</a></li>
+                    <li><a href="">Widerruf</a></li>
+                    <li><a href="">Impressum</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bot">
+            <p>*Alle Preise inkl zzgl. Versandkosten. der gesetzlichen MwSt.</p>
+            <div class="img">
+                <img src="./img/cards1.svg" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="account-modal modal-window" data-modal="account">
+    <div class="backplate"></div>
+    <div class="account-modal__cont tabs-owner">
+        <div class="cls">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="account-modal__head">
+            <div class="account-modal__btn tab-btn active">Anmelden</div>
+            <div class="account-modal__btn tab-btn ">Registrieren</div>
+        </div>
+        <div class="account-modal__center">
+            <div class="account-modal__tab single-tab active">
+                <div class="txt">
+                    <p>Log in to Anroshop.de</p>
+                    <span>Bitte gib Deine E-Mail Adresse und Password ein: </span>
+                </div>
+                <div class="account-modal__form">
+                    <form action="">
+                        <div class="input-wrap">
+                            <input type="email" placeholder="Benutzername oder E-Mail-Adresse*">
+                        </div>
+                        <div class="input-wrap">
+                            <input type="password" placeholder="Passwort*">
+                        </div>
+                        <a href="" class="reset-pass btn-mod" data-mod="reset">Passwort vergessen?</a>
+                        <div class="input-checkbox">
+                            <label for=""></label>
+                            <input type="checkbox">
+                            <span class="checkbox-text">Angemeldet bleiben</span>
+                        </div>
+                        <button class="btn btn--green">Anmelden</button>
+                    </form>
+                </div>
+                <div class="form-separator">or</div>
+                <div class="account-modal__logs-other">
+                    login plugin
+                </div>
+            </div>
+            <div class="account-modal__tab single-tab ">
+                <div class="txt">
+                    <p>Melden Sie sich bei Anroshop.de</p>
+                    <span>Bitte fülle die Felder unten aus:</span>
+                </div>
+                <div class="account-modal__form">
+                    <form action="">
+                        <div class="input-wrap">
+                            <input type="email" placeholder="E-Mail-Adresse*">
+                        </div>
+                        <div class="input-wrap">
+                            <input type="text" placeholder="USt.-ID *">
+                        </div>
+                        <div class="input-text">
+                            <p></p>
+                        </div>
+                        <div class="input-checkbox">
+                            <label for=""></label>
+                            <input type="checkbox">
+                            <span class="checkbox-text">Ja, ich möchte ein Kundenkonto eröffnen und akzeptiere die <a
+                                    href="">Datenschutzerklärung</a>.</span>
+                        </div>
+                        <button class="btn btn--green">Registrierung</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="account-modal modal-window " data-modal="reset">
+    <div class="backplate"></div>
+    <div class="account-modal__cont">
+        <div class="cls">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="account-modal__center">
+            <div class="account-modal__tab single-tab active">
+                <div class="txt">
+                    <p>Hast du dein Passwort vergessen?</p>
+                    <span>Bitte gib deinen Benutzernamen oder E-Mail-Adresse ein. Du erhältst einen Link per E-Mail, womit du dir ein neues Passwort erstellen kannst.</span>
+                </div>
+                <div class="account-modal__form">
+                    <form action="">
+                        <div class="input-wrap">
+                            <input type="email" placeholder="Benutzername oder E-Mail-Adresse*">
+                        </div>
+                        <button class="btn btn--green">Anmelden</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script class="main-script" src="./js/scripts.min.js"></script>
+</body>
+</html>

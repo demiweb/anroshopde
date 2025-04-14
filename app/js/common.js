@@ -25,13 +25,19 @@ $(window).scroll(function (e) {
 
 
 $('.single-faq__head').click(function () {
-    $(this).closest('.single-faq').toggleClass(' open ');
+    // $(this).closest('.single-faq').toggleClass(' open ');
     //$(this).siblings().removeClass(' active ');
 
     if ($(this).closest('.single-faq').hasClass('open')) {
-        $(this).closest('.single-faq').find('.single-faq__cont').stop().slideDown();
-    } else {
         $(this).closest('.single-faq').find('.single-faq__cont').stop().slideUp();
+        $(this).closest('.single-faq').removeClass('open');
+    } else {
+        $('.single-faq.open').find('.single-faq__cont').stop().slideUp();
+        $('.single-faq.open').removeClass('open');
+
+        $(this).closest('.single-faq').find('.single-faq__cont').stop().slideDown();
+        $(this).closest('.single-faq').addClass('open');
+
     }
 
     return false;
@@ -547,6 +553,61 @@ function startProductPageSlider() {
 
 startProductPageSlider();
 
+
+let aboutSlider = [...document.querySelectorAll('.other-shops__list')];
+
+function startAboutSlider1() {
+    if (aboutSlider.length) {
+        aboutSlider.forEach((sld) => {
+            let sldCont = sld.querySelector('.swiper');
+            let sldPrev = sld.querySelector('.slider-btn--prev');
+            let sldNext = sld.querySelector('.slider-btn--next');
+            let pagin = sld.querySelector('.dots');
+            if (window.innerWidth < 768) {
+                const swiper2 = new Swiper(sldCont, {
+                    // Optional parameters
+                    loop: false,
+                    grabCursor: true,
+                    slidesPerView: 2,
+                    slidesPerGroup: 1,
+                    speed: 600,
+
+                    followFinger: true,
+                    allowTouchMove: true,
+                    threshold: 10,
+                    touchMoveStopPropagation: false,
+                    touchStartPreventDefault: true,
+                    touchStartForcePreventDefault: false,
+
+                    resistance: true,
+                    resistanceRatio: 0.3,
+                    cssMode: false,
+                    navigation: {
+                        nextEl: sldNext,
+                        prevEl: sldPrev,
+                    },
+                    autoplay: false,
+                    spaceBetween: 20,
+                    pagination: {
+                        el: pagin,
+                        type: 'bullets',
+                        bulletActiveClass: 'active',
+                        bulletClass: 'single-dot',
+                        bulletElement: 'div',
+                        clickable: true,
+                        currentClass: 'current',
+                        spaceBetween: 0,
+                    },
+
+
+                });
+            }
+        })
+    }
+}
+
+startAboutSlider1();
+
 // scrollbtn
 let scrlBtn = [...document.querySelectorAll('.scroll-to')];
 
@@ -583,12 +644,16 @@ function controlDrop() {
 
 controlDrop();
 
-function ifHaveShips() {
-    if (document.querySelector('.page-section')) {
-        const sections = document.querySelectorAll(".page-section");
-        const menuItems = document.querySelectorAll(".block-fixed-menu__cont li a");
+function ifHaveShips(elem, list) {
+    if (document.querySelector(elem)) {
+        const sections = document.querySelectorAll(elem);
+        const menuItems = document.querySelectorAll(`${list} li a`);
         let hb = document.querySelector('.block-fixed-menu').offsetHeight;
+        if (hb) {
 
+        } else {
+            hb = 0;
+        }
         function onScroll2() {
             var scrollPos = $(document).scrollTop();
 
@@ -664,7 +729,8 @@ function ifHaveShips() {
     }
 }
 
-ifHaveShips();
+ifHaveShips('.page-section', '.block-fixed-menu__cont');
+// ifHaveShips();
 
 // cart
 let btnCart = [...document.querySelectorAll('.btn-cart')];
@@ -813,7 +879,7 @@ function controlModal() {
 }
 
 controlModal();
-$('body').on('click','.btn-close',function(e){
+$('body').on('click', '.btn-close', function (e) {
     e.preventDefault();
     e.stopPropagation();
     $('.modal-window.visible').removeClass('visible');
