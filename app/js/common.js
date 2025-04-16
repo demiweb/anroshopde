@@ -887,4 +887,34 @@ $('body').on('click', '.btn-close', function (e) {
 })
 
 //modal
+let filterOpener = document.querySelector('.filter-open');
+function controlFilterOpener() {
+    if (filterOpener) {
+        let filt = document.querySelector('.category-page-content__left');
+        let filtClose = document.querySelector('.category-page-content__left .bot-filt .btn-cls');
+        let filtApply = document.querySelector('.category-page-content__left .bot-filt .btn-app');
+
+        filterOpener.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            filt.classList.add('open');
+            document.querySelector('body').classList.add('no-scroll');
+        });
+        filtClose.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            filt.classList.remove('open');
+            document.querySelector('body').classList.remove('no-scroll');
+        });
+        filtApply.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            filt.classList.remove('open');
+            document.querySelector('body').classList.remove('no-scroll');
+            document.querySelector('.woof_submit_search_form').click();
+        });
+    }
+}
+
+controlFilterOpener();
 
