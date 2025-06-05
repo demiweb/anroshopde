@@ -42,9 +42,14 @@ $('.single-faq__head').click(function () {
 
     return false;
 });
-// control footer
 let hh = $('header').outerHeight();
-document.body.style.setProperty('--headerheight', `${hh}px`);
+// control footer
+function updateHeaderHeight() {
+    hh = $('header').outerHeight();
+    document.body.style.setProperty('--headerheight', `${hh}px`);
+}
+updateHeaderHeight();
+window.addEventListener('resize', updateHeaderHeight);
 
 
 var burger = [...document.querySelectorAll('.burger')];
@@ -104,6 +109,7 @@ function footerTopControl() {
 footerTopControl();
 
 
+
 let footerMen = [...document.querySelectorAll('.footer-column')];
 
 function controlFooterMenu() {
@@ -131,11 +137,11 @@ function controlMenuOpen() {
             btn.appendChild(newArrMob);
 
             newArrMob.addEventListener('click', (e) => {
-                if (window.innerWidth < 768) {
+
                     e.preventDefault();
                     e.stopPropagation();
                     btn.closest('.menu-item-has-children').classList.toggle('open');
-                }
+
 
             })
         })
@@ -320,6 +326,72 @@ function startRowSlider1() {
 
 startRowSlider1();
 
+let articleSlider = [...document.querySelectorAll('.row-block__slider_in__post')];
+
+function startArticleSlider1() {
+    if (articleSlider.length) {
+        articleSlider.forEach((sld) => {
+
+
+
+                let sldCont = sld.querySelector('.swiper');
+                let sldPrev = sld.querySelector('.slider-btn--prev');
+                let sldNext = sld.querySelector('.slider-btn--next');
+                let pagin = sld.querySelector('.dots');
+                let amount = 3;
+                if (sld.querySelector('.home-hero-section__item')) {
+                    amount = 4;
+                }
+                const swiper2 = new Swiper(sldCont, {
+                    // Optional parameters
+                    loop: false,
+                    grabCursor: true,
+                    slidesPerView: 2,
+                    slidesPerGroup: 1,
+                    speed: 600,
+
+                    followFinger: true,
+                    allowTouchMove: true,
+                    threshold: 10,
+                    touchMoveStopPropagation: false,
+                    touchStartPreventDefault: true,
+                    touchStartForcePreventDefault: false,
+
+                    resistance: true,
+                    resistanceRatio: 0.3,
+                    cssMode: false,
+                    navigation: {
+                        nextEl: sldNext,
+                        prevEl: sldPrev,
+                    },
+                    autoplay: false,
+                    spaceBetween: 10,
+                    pagination: {
+                        el: pagin,
+                        type: 'bullets',
+                        bulletActiveClass: 'active',
+                        bulletClass: 'single-dot',
+                        bulletElement: 'div',
+                        clickable: true,
+                        currentClass: 'current',
+                        spaceBetween: 0,
+                    },
+                    breakpoints: {
+                        767: {
+                            slidesPerView: amount,
+                            spaceBetween: 20,
+                        }
+                    }
+
+
+                });
+
+        })
+    }
+}
+
+startArticleSlider1();
+
 let cartSlider = [...document.querySelectorAll('.cart-slider__wrap')];
 
 function startCartSlider1() {
@@ -451,12 +523,14 @@ function startCategorySlider1() {
 startCategorySlider1();
 
 
-let productPageSlider = [...document.querySelectorAll('.product-main__left')];
-
+let productPageSlider = [...document.querySelectorAll('.product-main__cont')];
+let swiperProd1 = '';
 function startProductPageSlider() {
     if (!productPageSlider.length) {
+        console.log('nema slider');
 
     } else {
+        console.log('e slider');
         productPageSlider.forEach((sld) => {
 
 
@@ -498,7 +572,7 @@ function startProductPageSlider() {
 
             });
 
-            const swiper2 = new Swiper(sldCont, {
+            swiperProd1 = new Swiper(sldCont, {
                 // Optional parameters
                 loop: false,
                 grabCursor: true,
@@ -606,6 +680,7 @@ function startAboutSlider1() {
     }
 }
 
+
 startAboutSlider1();
 
 // scrollbtn
@@ -628,6 +703,7 @@ function controlScrollBtn() {
 
 controlScrollBtn();
 
+
 // dropdown
 let dropBlock = [...document.querySelectorAll('.prod-drop')];
 
@@ -644,8 +720,25 @@ function controlDrop() {
 
 controlDrop();
 
+let accBlock = [...document.querySelectorAll('.woocommerce-MyAccount-navigation')];
+
+function controlAccOpen() {
+    if (accBlock.length) {
+        accBlock.forEach((block) => {
+            let hd = block.querySelector('.acc-menu-opener');
+            let listMenus = block.querySelector('.is-active a');
+            hd.innerHTML = listMenus.innerHTML;
+            hd.addEventListener('click', () => {
+                block.classList.toggle('open');
+            })
+        })
+    }
+}
+
+controlAccOpen();
+
 function ifHaveShips(elem, list) {
-    if (document.querySelector(elem)) {
+    if (document.querySelector(elem) && document.querySelector(list)) {
         const sections = document.querySelectorAll(elem);
         const menuItems = document.querySelectorAll(`${list} li a`);
         let hb = document.querySelector('.block-fixed-menu').offsetHeight;
@@ -918,3 +1011,46 @@ function controlFilterOpener() {
 
 controlFilterOpener();
 
+let canvasPage = document.querySelector('.canvasproduct');
+
+function controlCanvasPage() {
+    if (canvasPage) {
+        if (document.querySelector('.product-main__form form.cart .pewc-product-extra-groups .pewc-option-list .pewc-item-field-wrapper p.pewc-description')) {
+            let alink = document.querySelector('.product-main__form form.cart .pewc-product-extra-groups .pewc-option-list .pewc-item-field-wrapper p.pewc-description a').cloneNode(true);
+            document.querySelector('.product-main__form form.cart .pewc-product-extra-groups .pewc-option-list .pewc-field-label').appendChild(alink);
+        }
+    }
+}
+controlCanvasPage();
+
+
+let linkRateBtn = [...document.querySelectorAll('.rate-link')];
+
+function controlLinkRateBtn() {
+    linkRateBtn.forEach((btn) => {
+        let lnk = 0;
+        let lnkTab = 0;
+        if (document.querySelector('.rate-block')) {
+             lnk = document.querySelector('.rate-block');
+            lnkTab = document.querySelector('.rate-tab');
+
+        } else {
+            lnk = document.querySelector('#reviews');
+            lnkTab = document.querySelector('.block-fixed-menu__cont');
+        }
+
+
+
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            lnkTab.click();
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $(lnk).offset().top - hh
+            }, 600);
+
+        })
+    })
+}
+
+controlLinkRateBtn();

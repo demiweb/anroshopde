@@ -40,4 +40,14 @@
   body, html {
     font-size: vw(25px);
   }
+  .canvasproduct .product-main__canvas-slider {
+    width: 100%;
+    max-width: 40.5rem;
+  }
+  .woocommerce div.product .canvasproduct .product-main__right:not(.product-main__right--top) {
+    width: calc(100% - 42rem);
+  }
+  .product-main__left {
+    width: 40.5rem;
+  }
 }
