@@ -720,6 +720,7 @@ function controlDrop() {
 
 controlDrop();
 
+
 let accBlock = [...document.querySelectorAll('.woocommerce-MyAccount-navigation')];
 
 function controlAccOpen() {
