@@ -4824,8 +4824,8 @@ body, html {
 
     label {
         display: inline-block;
-        margin-bottom: 0.75rem;
-        @include text(0.8rem, $main-color, 1.25, 600);
+        margin-bottom: 0.35rem;
+        @include text(0.8rem, $main-color, 1.25 !important, 600);
     }
 
     &:has(:required) {
@@ -4884,9 +4884,16 @@ body, html {
 
 .mollie-components {
     > div {
+        + div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-top: .2rem;
+        }
         b {
             display: inline-block;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.35rem;
             @include text(0.8rem, $main-color, 1.25, 600);
         }
 
@@ -4895,7 +4902,7 @@ body, html {
             width: 100%;
             border: 1px solid #EAE0D4;
             border-radius: 0.5rem;
-            padding: 1rem;
+            padding: 0.6rem 1rem;
             @include text(0.8rem, $main-color, 1.25, 300);
             box-shadow: none !important;
 
@@ -6498,7 +6505,7 @@ body, html {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.4rem;
 
         .checkout-title {
             margin-bottom: 0;
@@ -6515,7 +6522,7 @@ body, html {
 
     &__cont {
         width: 100%;
-        padding: 3rem 0 4.5rem;
+        padding: 1.8rem 0 2.5rem;
     }
 
     &__wrap {
@@ -6527,15 +6534,15 @@ body, html {
 
     &__sum {
         width: 100%;
-        margin-top: 0.5rem;
-        margin-bottom: 0.75rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.4rem;
         background: #F4EFE9;
         border-radius: 0.5rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        padding: 0.75rem;
+        padding: 0.45rem 0.75rem;
     }
 
     &__line {
@@ -6543,8 +6550,8 @@ body, html {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 0.5rem;
-        margin-bottom: 0.5rem;
+        padding-bottom: 0.35rem;
+        margin-bottom: 0.35rem;
         border-bottom: 1px solid #E2DDD6;
 
         &:last-child {
@@ -6665,15 +6672,15 @@ body, html {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        @include text(1.2rem, $main-color, 1.25, 600);
-        margin-bottom: 1.5rem;
+        @include text(1rem, $main-color, 1.25, 600);
+        margin-bottom: 0.7rem;
 
         &::before {
             display: inline-block;
             content: '';
-            width: 1.75rem;
-            height: 1.75rem;
-            margin-right: 0.5rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-right: 0.3rem;
             background: $main-color;
             mask-image: var(--ic);
             mask-size: auto 100%;
@@ -6702,8 +6709,8 @@ body, html {
     width: 100%;
     padding-top: 1rem;
     border-top: 1px solid #D1D5DB;
-    margin-bottom: 3rem;
-    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 0.4rem;
 
     .checkbox-text {
         font-size: 0.8rem;
@@ -6713,15 +6720,14 @@ body, html {
 
 .checkout-deliv {
     width: 100%;
-    padding: 1rem;
+    padding: 0.6rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #232F3E;
     transition: all 0.3s ease-in-out;
     border: 2px solid #232F3E;
-    @include text(1.6rem, #fff, 1.25, 600);
-    transition: all 0.3s ease-in-out;
+    @include text(1.4rem, #fff, 1.25, 600);
     text-align: center;
 
     p {
@@ -6745,7 +6751,7 @@ body, html {
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
-    padding: 0.75rem 1rem;
+    padding: 0.6rem 1rem;
     border: 1px solid #D1D5DB;
     border-radius: 0.5rem;
     transition: all 0.3s ease-in-out;
@@ -6763,7 +6769,7 @@ body, html {
         top: 0;
         left: 0;
         width: 100%;
-        height: 2.6rem;
+        height: 2.3rem;
         appearance: none;
         cursor: pointer;
         z-index: 2;
@@ -6813,7 +6819,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    @include text(0.8rem, $main-color, 1.25, 300);
+    @include text(0.7rem, $main-color, 1.25, 300);
 
     &::before {
         width: 1rem;
@@ -6855,13 +6861,13 @@ body, html {
         margin-bottom: 0.5rem;
     }
 
-    form {
+    form, .checkout_coupon {
         position: relative;
         width: 100%;
 
         .btn {
             position: absolute;
-            right: 1rem;
+            right: 0.2rem;
             font-size: 0.7rem;
             height: 2.25rem;
             padding-left: 0.5rem;
@@ -6886,7 +6892,7 @@ body, html {
                 border-radius: 0.5rem;
                 background: #fff;
                 border: 1px solid #D1D5DB;
-                padding: 1.3rem 1rem;
+                padding: 0.8rem 1rem;
                 padding-right: 11rem;
             }
         }
@@ -10089,6 +10095,13 @@ body.woocommerce #review_form #respond p {
                         }
                     }
                 }
+                &.woocommerce-MyAccount-navigation-link--individual-order {
+                    a {
+                        &::before {
+                            mask-image: url("../img/dh2.svg");
+                        }
+                    }
+                }
 
                 &.woocommerce-MyAccount-navigation-link--edit-address {
                     a {
@@ -10660,7 +10673,7 @@ body.woocommerce-checkout {
 
 .woocommerce form .form-row {
     padding: 0;
-    margin: 0 0 1rem;
+    margin: 0 0 0.5rem;
 }
 
 body {
@@ -10692,8 +10705,15 @@ body {
 
     .checkout-radio__field {
         p {
-            font-size: 0.75rem;
+            font-size: 0.65rem;
             padding-top: 0.4rem;
+        }
+    }
+}
+#order_review .wc-gzd-checkbox-placeholder {
+    p {
+        &:empty {
+            display: none;
         }
     }
 }
@@ -11414,18 +11434,20 @@ body {
         .pewc-product-extra-groups-wrap {
             .pewc-total-only {
                 width: 100%;
-                padding: 0.75rem;
-                border-radius: 0.5rem;
+                padding: 0.55rem 0.75rem 0.1rem;
+                border-radius: 0.5rem 0.5rem 0 0;
                 background: #fff;
                 margin-top: 0.75rem;
+                margin-bottom: 0 !important;
             }
         }
 
         .product-main__info-details {
             margin: 0;
-            padding: 0.75rem;
-            border-radius: 0.5rem;
+            padding: 0.1rem 0.75rem 0.55rem;
+            border-radius: 0 0 0.5rem 0.5rem;
             background: #fff;
+            margin-top: 0 !important;
         }
     }
 }
@@ -11885,12 +11907,45 @@ body.woocommerce #review_form #respond p {
 .woocommerce .product-main {
     &.canvasproduct {
         &.canvasproduct--custom {
+            .product-main__delivery {
+                display: none;
+            }
+
+            .cart_add_error {
+                display: none;
+            }
+
+            form > .quantity {
+                display: none;
+            }
+
+            form.cart > .cart-btn {
+                width: 100%;
+                margin-left: 0 !important;
+                margin-top: 0.75rem !important;
+            }
+
+            .product-main__info-details {
+                display: none !important;
+            }
+
             .product-main__help {
                 display: none;
             }
+
             .product-main__left {
                 width: 100%;
                 max-width: 44.5rem;
+                > .txt {
+                    width: 100%;
+                    margin-bottom: 0.5rem;
+                    p {
+                        font-size: 0.8rem;
+                        line-height: 1.2;
+                        font-weight: 400;
+                        color: $main-color;
+                    }
+                }
             }
 
             .product-main__canvas-slider {
@@ -11914,6 +11969,9 @@ body.woocommerce #review_form #respond p {
             .product-main__right {
                 border: 0.25rem solid $green;
                 background: rgba(255, 255, 255, 0);
+                .title {
+                    margin-bottom: 0.5rem;
+                }
 
                 .product-main__right--top {
                     display: none;
@@ -12049,6 +12107,10 @@ body.woocommerce #review_form #respond p {
 
                 &.pewc-group-number.pewc-item-number {
                     width: 100%;
+
+                    &.pewc-field-has-condition {
+                        width: calc(50% - (0.75rem / 2));
+                    }
                 }
 
                 &.pewc-group-select.pewc-item-select {
@@ -12418,6 +12480,23 @@ body.woocommerce #review_form #respond p {
                 margin-bottom: 1rem;
                 border-bottom: 1px solid rgba(244, 239, 233, 1);
                 gap: 1.75rem;
+                .form-table {
+                    th, td {
+                        @include text(0.8rem, $main-color, 1.25, 300);
+                        padding: 0.2rem !important;
+                        div {
+                            margin: 0;
+                        }
+                    }
+                    a {
+                        color: $green;
+                        text-decoration: underline;
+                    }
+                    th {
+                        font-weight: 400;
+                        text-align: left;
+                    }
+                }
             }
 
             &__item {
@@ -12425,7 +12504,7 @@ body.woocommerce #review_form #respond p {
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
-                max-width: 30rem;
+                max-width: 26rem;
 
                 &:first-child {
                     flex-grow: initial;
@@ -12436,8 +12515,8 @@ body.woocommerce #review_form #respond p {
                 }
 
                 .img {
-                    width: 12rem;
-                    height: 12rem;
+                    width: 4rem;
+                    height: 4rem;
                     display: flex;
                     @include overFlow;
                     background-color: #fff;
@@ -12454,7 +12533,7 @@ body.woocommerce #review_form #respond p {
                 }
 
                 p {
-                    @include text(0.8rem, $main-color, 1.25, 300);
+                    @include text(0.65rem, $main-color, 1.25, 300);
 
                     small {
                         font-size: 0.65rem;
@@ -12480,15 +12559,18 @@ body.woocommerce #review_form #respond p {
         .account-modal__cont {
             width: 32rem;
         }
+
         .account-modal__center {
             flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
+
             .txt {
                 width: 100%;
                 @include text(0.9rem, $main-color, 1.3, 400);
             }
+
             .btns {
                 width: 100%;
                 gap: 0.5rem;
@@ -12496,6 +12578,7 @@ body.woocommerce #review_form #respond p {
                 align-items: center;
                 justify-content: center;
                 margin-top: 1rem;
+
                 .btn {
                     width: calc(50% - 0.25rem);
                 }
@@ -12504,4 +12587,156 @@ body.woocommerce #review_form #respond p {
     }
 }
 
+.woocommerce div.product .canvasproduct .product-main__form form.cart .pewc-product-extra-groups .pewc-field-has-condition .pewc-item-field-wrapper input {
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        box-shadow: 0 0 1.25rem #5ca03e6b;
+        border-color: #5ca03e;
+    }
+}
 
+.woocommerce .product-main.canvasproduct.canvasproduct--custom .product-main__right {
+    form.cart .pewc-product-extra-groups .pewc-radio-images-wrapper.pewc-hide-labels .pewc-radio-image-wrapper.checked label img {
+        border-color: #5c9f3d;
+    }
+
+    form.cart .pewc-product-extra-groups .pewc-radio-images-wrapper .pewc-radio-checkbox-image-wrapper.checked img {
+        border-color: #5c9f3d;
+    }
+
+    form.cart .pewc-group.pewc-option-list .pewc-checkbox-group-wrapper li label .pewc-radio-option-text::after {
+        background: #5c9f3d;
+    }
+
+}
+
+.custom-order__comments {
+    .comments-area {
+        width: 100%;
+
+    }
+    #wpdcom  .wc-field-submit {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .wpd_label {
+            margin: 0;
+        }
+    }
+}
+.canvasproduct--custom {
+    .woocommerce-error, .woocommerce-message{
+        display: none;
+    }
+}
+
+.woocommerce .woocommerce-MyAccount-content .custom-order__line {
+    .custom-order__tbl-wrp {
+        width: 100%;
+
+    }
+    .custom-order__tbl {
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        display: none;
+
+        .form-table {
+            width: 100%;
+            border-collapse: collapse;
+            tr {
+                th, td {
+                    padding: 0.4rem !important;
+                    border-bottom: 1px solid $lightgreen;
+                }
+                td {
+                    padding-left: 2rem !important;
+                    border-left: 1px solid $lightgreen;
+                }
+            }
+        }
+    }
+    .btn-ctrl-open {
+        cursor: pointer;
+        margin-top: 1rem;
+        &::before {
+            display: inline-block;
+            content: '';
+            width: 1rem;
+            height: 1rem;
+            background: #fff;
+            mask-image: url("../img/arrsld.svg");
+            mask-size: auto 100%;
+            mask-position: center center;
+            mask-repeat: no-repeat;
+            transition: all 0.3s ease-in-out;
+            transform: rotate(-90deg);
+        }
+        &:hover {
+            &::before {
+                background: $green;
+            }
+        }
+    }
+    .custom-order__tbl-wrp {
+        &.open {
+            .btn-ctrl-open {
+                &::before {
+                    transform: rotate(90deg);
+                }
+            }
+            .custom-order__tbl {
+                display: flex;
+            }
+        }
+    }
+}
+.woocommerce {
+    .wc-empty-cart-message, .return-to-shop {
+        max-width: 85rem;
+        padding: 0 1rem;
+        width: 100%;
+        margin: 3rem auto 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .btn {
+            width: auto;
+        }
+        .cart-empty.woocommerce-info {
+            width: 100%;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0);
+            border-radius: 0.75rem;
+            border: 0.1rem solid $red;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: $main-color;
+            text-align: center;
+            margin: 0;
+            &::before, &::after {
+                content: none;
+            }
+        }
+    }
+}
+.help-btns-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    background: rgba(92, 159, 61, .1);
+    .product-main__help {
+        padding: 0;
+        border: none;
+        background: rgba(255, 255, 255, 0);
+        width: calc(50% - 0.25rem);
+        .btn-help {
+            width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
